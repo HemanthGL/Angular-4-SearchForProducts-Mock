@@ -1,0 +1,14 @@
+<div class="container bg-dark-subtle border border-dark mb-2">
+    <div class="author mt-3 mb-1">{{item.book.title}}</div>
+    <div class="price mb-3">Price: <b class="fw-bolder">${{item.book.price.value}}</b></div>
+    <div class="order-details d-flex justify-content-between m-3">
+        <div class="w-50 quantity-settings d-flex justify-content-around">
+            <button class="btn btn-primary" (click) = "addQuant(item)">+</button>
+            <div class="quantity fw-bolder">{{item.quantity}}</div>
+            <button class="btn btn-primary" (click) = "remQuant(item)">-</button>
+        </div>
+        <div class="remove-btn-cont">
+            <button type="button" class="btn btn-danger" (click) = "removeBook(item)">Remove</button>
+        </div>
+    </div>
+</div>
