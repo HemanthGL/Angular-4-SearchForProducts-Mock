@@ -1,0 +1,9 @@
+@media screen and (max-width: 1098px){
+    .order-details{
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    .quantity-settings{
+        width: 100%;
+    }
+}
